@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export PATH="$HOME/.local/share/pnpm:$HOME/.bun/bin:$PATH"
+pnpm pre-commit

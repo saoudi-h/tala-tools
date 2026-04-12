@@ -1,0 +1,39 @@
+{
+  "name": "tala-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "typecheck": "turbo run typecheck",
+    "prepare": "husky",
+    "pre-commit": "turbo pre-commit --concurrency=1",
+    "changeset:version": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.30.0",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "@commitlint/types": "^20.2.0",
+    "@tala-tools/eslint": "workspace:*",
+    "@tala-tools/prettier": "workspace:*",
+    "@tala-tools/tsconfig": "workspace:*",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.7.4",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "publint": "0.3.18",
+    "tsdown": "0.21.7",
+    "turbo": "^2.9.6",
+    "typescript": "6.0.2",
+    "unplugin-unused": "0.5.7"
+  },
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}

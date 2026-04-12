@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "name": "tala-tools",
+            "path": "."
+        },
+        {
+            "name": "eslint",
+            "path": "packages/eslint"
+        },
+        {
+            "name": "prettier",
+            "path": "packages/prettier"
+        },
+        {
+            "name": "tsconfig",
+            "path": "packages/tsconfig"
+        },
+    ],
+}
