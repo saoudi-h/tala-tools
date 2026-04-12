@@ -1,0 +1,9 @@
+{
+    "extends": "@tala-tools/tsconfig/base.json",
+    "compilerOptions": {
+        "target": "es5",
+        "ignoreDeprecations": "6.0"
+    },
+    "include": ["./src/**/*.ts", "./*.ts"],
+    "exclude": ["dist", "build", "node_modules", ".vscode", ".next", ".turbo"]
+}
