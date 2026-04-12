@@ -1,0 +1,39 @@
+{
+    "name": "@tala-tools/tsconfig",
+    "version": "0.0.1",
+    "private": false,
+    "type": "module",
+    "description": "Shared TypeScript configurations for Tala projects",
+    "license": "MIT",
+    "main": "./base.json",
+    "files": [
+        "*.json"
+    ],
+    "exports": {
+        ".": "./base.json",
+        "./base.json": "./base.json",
+        "./nextjs.json": "./nextjs.json",
+        "./react-library.json": "./react-library.json",
+        "./next.json": "./next.json",
+        "./bun.json": "./bun.json",
+        "./remotion.json": "./remotion.json"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hakim/tala-tools.git",
+        "directory": "packages/tsconfig"
+    },
+    "keywords": [
+        "typescript",
+        "tsconfig",
+        "tala"
+    ],
+    "author": {
+        "name": "Saoudi Hakim",
+        "url": "https://hakimsaoudi.dev",
+        "email": "saoudihakim@gmail.com"
+    }
+}
