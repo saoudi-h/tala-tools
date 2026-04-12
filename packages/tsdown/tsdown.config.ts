@@ -1,0 +1,13 @@
+import type { UserConfigFn } from 'tsdown/config'
+import { defineConfig } from 'tsdown/config'
+import { base } from './src/configs/base.ts'
+
+const config: UserConfigFn = defineConfig(async options => ({
+    ...(await base(options)),
+    unused: {
+        ignore: ['publint', 'unplugin-unused'],
+    },
+    entry: ['./src/index.ts', './src/configs/index.ts'],
+}))
+
+export default config

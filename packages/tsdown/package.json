@@ -1,0 +1,41 @@
+{
+  "name": "@tala-tools/tsdown",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "publint": "0.3.18",
+    "unplugin-unused": "0.5.7"
+  },
+  "peerDependencies": {
+    "tsdown": "0.21.7"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint . --max-warnings 0 --fix",
+    "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
+    "format:fix": "prettier \"**/*\" --ignore-unknown --write",
+    "clean": "rimraf node_modules",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "pre-commit": "lint-staged"
+  },
+  "devDependencies": {
+    "@tala-tools/eslint": "workspace:*",
+    "@tala-tools/prettier": "workspace:*",
+    "@tala-tools/tsconfig": "workspace:*"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./configs": "./dist/configs/index.mjs",
+    "./package.json": "./package.json"
+  }
+}
