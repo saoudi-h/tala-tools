@@ -1,0 +1,24 @@
+.next
+node_modules
+.venv
+dist
+build
+**/out/**
+.turbo
+*.json
+!package.json
+!tsconfig.json
+!turbo.json
+
+# Agents & System Directories
+_bmad
+_bmad-output
+.agent
+.agents
+.claude
+.codex
+.cursor
+.gemini
+.opencode
+.windsurf
+.kiro
