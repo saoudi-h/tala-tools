@@ -16,5 +16,9 @@
             "name": "tsconfig",
             "path": "packages/tsconfig"
         },
+        {
+            "name": "tsdown",
+            "path": "packages/tsdown"
+        }
     ],
 }

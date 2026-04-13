@@ -12,6 +12,14 @@
         "lint": "prettier --check .",
         "format": "prettier --write ."
     },
+    "peerDependencies": {
+        "prettier": "^3.7.4"
+    },
+    "peerDependenciesMeta": {
+        "prettier": {
+            "optional": false
+        }
+    },
     "publishConfig": {
         "access": "public"
     },
