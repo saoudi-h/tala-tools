@@ -1,11 +1,11 @@
 import type { UserConfigFn } from 'tsdown/config'
 import { defineConfig } from 'tsdown/config'
 
-export const base: UserConfigFn = defineConfig(({ watch }) => ({
+export const base: UserConfigFn = defineConfig((inlineConfig, _context) => ({
     entry: ['./src/**/*.ts'],
     platform: 'node',
     dts: {
-        sourcemap: !!watch,
+        sourcemap: !!inlineConfig.watch,
     },
     unused: {
         level: 'error',

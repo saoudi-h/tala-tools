@@ -50,7 +50,6 @@
         "@next/eslint-plugin-next": "^16.2.3",
         "@tala-tools/prettier": "workspace:*",
         "@tala-tools/tsconfig": "workspace:*",
-        "@tala-tools/tsdown": "workspace:*",
         "@types/eslint-config-prettier": "^6.11.3",
         "@types/eslint-plugin-jsx-a11y": "^6.10.1",
         "@types/node": "^25.6.0",
@@ -70,8 +69,15 @@
     },
     "dependencies": {
         "@eslint/config-helpers": "^0.5.0",
-        "eslint": "^10.2.0",
         "eslint-plugin-better-tailwindcss": "^4.4.0"
+    },
+    "peerDependencies": {
+        "eslint": "^10.2.0"
+    },
+    "peerDependenciesMeta": {
+        "eslint": {
+            "optional": false
+        }
     },
     "inlinedDependencies": {
         "@babel/code-frame": "7.29.0",
@@ -265,6 +271,7 @@
         "tinyglobby": "0.2.16",
         "to-regex-range": "5.0.1",
         "ts-api-utils": "2.5.0",
+        "tsdown": "0.21.7",
         "typescript": "6.0.2",
         "typescript-eslint": "8.58.1",
         "yallist": "3.1.1",

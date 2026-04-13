@@ -1,8 +1,9 @@
-import { type UserConfigFn, defineConfig } from '@tala-tools/tsdown'
+import { defineConfig } from 'tsdown/config'
+import type { UserConfig } from 'tsdown'
 
-const config: UserConfigFn = defineConfig({
+const config: UserConfig = defineConfig({
     entry: ['src/index.ts'],
+    shims: true,
 })
 
 export default config
-

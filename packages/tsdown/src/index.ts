@@ -1,28 +1,62 @@
 import { defineConfig as tsdownDefine } from 'tsdown/config'
 import { base } from './configs/base.js'
+import type { UserConfig, UserConfigFn } from 'tsdown/config'
+
+export type { UserConfig, UserConfigFn } from 'tsdown/config'
+
+type Arrayable<T> = T | T[]
 
 /**
- * Options for tsdown configuration
+ * Type for tsdown configuration export (object, function, promise, or array)
  */
-export type Options = import('tsdown/config').Options
+export type TalaUserConfig = Arrayable<UserConfig> | UserConfigFn | Promise<Arrayable<UserConfig>>
 
 /**
- * Function type for tsdown configuration
+ * Deep merge utility for config objects
  */
-export type UserConfigFn = import('tsdown/config').UserConfigFn
+function deepMerge(base: Record<string, unknown>, override: Record<string, unknown>): Record<string, unknown> {
+    const result = { ...base }
+
+    for (const key in override) {
+        if (Object.prototype.hasOwnProperty.call(override, key)) {
+            const baseValue = result[key]
+            const overrideValue = override[key]
+
+            if (
+                typeof baseValue === 'object' &&
+                typeof overrideValue === 'object' &&
+                baseValue !== null &&
+                overrideValue !== null &&
+                !Array.isArray(baseValue) &&
+                !Array.isArray(overrideValue)
+            ) {
+                result[key] = deepMerge(
+                    baseValue as Record<string, unknown>,
+                    overrideValue as Record<string, unknown>
+                )
+            } else {
+                result[key] = overrideValue
+            }
+        }
+    }
+
+    return result
+}
 
 /**
  * Helper to define tsdown configuration with Tala Tools defaults
  */
-export const defineConfig = (options: Options | UserConfigFn): UserConfigFn => {
-    return tsdownDefine(async (context) => {
-        const baseConfig = await (typeof base === 'function' ? base(context) : base)
-        const userConfig = await (typeof options === 'function' ? options(context) : options)
+export const defineConfig = (options: TalaUserConfig): UserConfigFn => {
+    return tsdownDefine(async (inlineConfig, context) => {
+        const baseConfigRaw = await (typeof base === 'function' ? base(inlineConfig, context) : base)
+        const baseConfig = Array.isArray(baseConfigRaw) ? baseConfigRaw[0] : baseConfigRaw
 
-        return {
-            ...baseConfig,
-            ...userConfig,
-        }
+        const userConfigRaw = await (typeof options === 'function'
+            ? options(inlineConfig, context)
+            : options)
+        const userConfig = Array.isArray(userConfigRaw) ? userConfigRaw[0] : userConfigRaw
+
+        return deepMerge(baseConfig as Record<string, unknown>, userConfig as Record<string, unknown>) as UserConfig
     })
 }
 

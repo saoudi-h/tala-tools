@@ -18,7 +18,7 @@ export const base: Config[] = defineConfig([
             parser: tseslint.parser,
             parserOptions: {
                 projectService: {
-                    allowDefaultProject: ['*.js', '*.mjs', '*.ts'],
+                    allowDefaultProject: ['*.js', '*.mjs', '*.cjs'],
                 },
                 tsconfigRootDir: process.cwd(),
             },
@@ -29,7 +29,6 @@ export const base: Config[] = defineConfig([
         },
         plugins: {
             '@typescript-eslint': tseslint.plugin,
-            regexp: regexpPlugin,
         },
     },
 

@@ -15,9 +15,9 @@
     "tsdown": "0.21.7"
   },
   "scripts": {
-    "build": "tsdown",
-    "lint": "eslint . --max-warnings 0",
-    "lint:fix": "eslint . --max-warnings 0 --fix",
+    "build": "tsdown --config-loader unrun",
+    "lint": "pnpm exec eslint . --max-warnings 0",
+    "lint:fix": "pnpm exec eslint . --max-warnings 0 --fix",
     "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
     "format:fix": "prettier \"**/*\" --ignore-unknown --write",
     "clean": "rimraf node_modules",
@@ -27,7 +27,9 @@
   "devDependencies": {
     "@tala-tools/eslint": "workspace:*",
     "@tala-tools/prettier": "workspace:*",
-    "@tala-tools/tsconfig": "workspace:*"
+    "@tala-tools/tsconfig": "workspace:*",
+    "@types/node": "^22.0.0",
+    "eslint": "^10.2.0"
   },
   "files": [
     "dist"

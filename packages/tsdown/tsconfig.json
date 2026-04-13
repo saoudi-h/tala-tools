@@ -3,14 +3,13 @@
         "target": "esnext",
         "lib": ["es2023"],
         "moduleDetection": "force",
-        "module": "preserve",
+        "module": "esnext",
         "moduleResolution": "bundler",
         "resolveJsonModule": true,
         "types": ["node"],
         "strict": true,
         "noUnusedLocals": true,
         "declaration": true,
-        "isolatedDeclarations": true,
         "esModuleInterop": true,
         "isolatedModules": true,
         "verbatimModuleSyntax": true,
@@ -18,6 +17,6 @@
         "allowImportingTsExtensions": true,
         "emitDeclarationOnly": true
     },
-    "include": ["index.ts", "src/**/*", "lint-staged.config.mjs", "tsdown.config.ts"],
+    "include": ["index.ts", "src/**/*", "lint-staged.config.mjs", "tsdown.config.ts", "eslint.config.ts"],
     "exclude": ["dist", "build", "node_modules", ".vscode", ".turbo"]
 }
