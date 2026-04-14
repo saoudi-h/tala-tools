@@ -1,43 +1,48 @@
 {
-  "name": "@tala-tools/tsdown",
-  "version": "0.1.0",
-  "private": false,
-  "type": "module",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "publint": "0.3.18",
-    "unplugin-unused": "0.5.7"
-  },
-  "peerDependencies": {
-    "tsdown": "0.21.7"
-  },
-  "scripts": {
-    "build": "tsdown --config-loader unrun",
-    "lint": "pnpm exec eslint . --max-warnings 0",
-    "lint:fix": "pnpm exec eslint . --max-warnings 0 --fix",
-    "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
-    "format:fix": "prettier \"**/*\" --ignore-unknown --write",
-    "clean": "rimraf node_modules",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
-    "pre-commit": "lint-staged"
-  },
-  "devDependencies": {
-    "@tala-tools/eslint": "workspace:*",
-    "@tala-tools/prettier": "workspace:*",
-    "@tala-tools/tsconfig": "workspace:*",
-    "@types/node": "^22.0.0",
-    "eslint": "^10.2.0"
-  },
-  "files": [
-    "dist"
-  ],
-  "types": "./dist/index.d.mts",
-  "exports": {
-    ".": "./dist/index.mjs",
-    "./configs": "./dist/configs/index.mjs",
-    "./package.json": "./package.json"
-  }
+    "name": "@tala-tools/tsdown",
+    "version": "0.1.0",
+    "private": false,
+    "type": "module",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hakim/tala-tools.git",
+        "directory": "packages/tsdown"
+    },
+    "dependencies": {
+        "publint": "0.3.18",
+        "unplugin-unused": "0.5.7"
+    },
+    "peerDependencies": {
+        "tsdown": "0.21.7"
+    },
+    "scripts": {
+        "build": "tsdown --config-loader unrun",
+        "lint": "pnpm exec eslint . --max-warnings 0",
+        "lint:fix": "pnpm exec eslint . --max-warnings 0 --fix",
+        "format:check": "prettier \"**/*\" --ignore-unknown --list-different",
+        "format:fix": "prettier \"**/*\" --ignore-unknown --write",
+        "clean": "rimraf node_modules",
+        "typecheck": "tsc -p tsconfig.json --noEmit",
+        "pre-commit": "lint-staged"
+    },
+    "devDependencies": {
+        "@tala-tools/eslint": "workspace:*",
+        "@tala-tools/prettier": "workspace:*",
+        "@tala-tools/tsconfig": "workspace:*",
+        "@types/node": "^22.0.0",
+        "eslint": "^10.2.0"
+    },
+    "files": [
+        "dist"
+    ],
+    "types": "./dist/index.d.mts",
+    "exports": {
+        ".": "./dist/index.mjs",
+        "./configs": "./dist/configs/index.mjs",
+        "./package.json": "./package.json"
+    }
 }

@@ -26,7 +26,10 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/hakim/tala-tools.git",
-        "directory": "packages/tsconfig"
+        "directory": "packages/prettier"
+    },
+    "exports": {
+        ".": "./index.js"
     },
     "keywords": [
         "prettier",
