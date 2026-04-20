@@ -5,8 +5,10 @@
     "type": "module",
     "description": "Shared Prettier configuration for Tala projects",
     "main": "index.js",
+    "types": "./index.d.ts",
     "files": [
-        "index.js"
+        "index.js",
+        "index.d.ts"
     ],
     "scripts": {
         "lint": "prettier --check .",
@@ -29,7 +31,10 @@
         "directory": "packages/prettier"
     },
     "exports": {
-        ".": "./index.js"
+        ".": {
+            "types": "./index.d.ts",
+            "default": "./index.js"
+        }
     },
     "keywords": [
         "prettier",

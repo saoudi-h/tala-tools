@@ -10,6 +10,24 @@ const config: UserConfigFn = defineConfig(async (inlineConfig, context) => {
         unused: {
             ignore: ['publint', 'unplugin-unused'],
         },
+        exports: {
+            customExports(pkg, _context) {
+                // Enrich tsdown-generated exports with types conditions
+                const entries = ['.', './configs']
+                for (const entry of entries) {
+                    const outputPath = pkg[entry]
+                    if (outputPath && typeof outputPath === 'string') {
+                        const dtsPath = outputPath.replace('.mjs', '.d.mts')
+                        pkg[entry] = {
+                            types: dtsPath,
+                            default: outputPath,
+                        }
+                    }
+                }
+                pkg['./package.json'] = './package.json'
+                return pkg
+            },
+        },
         entry: ['./src/index.ts', './src/configs/index.ts'],
     }
 })
