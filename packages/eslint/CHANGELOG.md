@@ -1,6 +1,6 @@
-# @tala-tools/tsdown
+# @tala-tools/eslint
 
-## 0.1.2
+## 0.1.1
 
 ### Patch Changes
 
@@ -11,10 +11,3 @@
     - Creating `index.d.ts` for prettier config package
 
     This allows IDEs to navigate directly to source code when clicking on imported symbols.
-
-## 0.1.1
-
-### Patch Changes
-
-- 3306187: fix(prettier): convert to ESM export default and fix repository metadata.
-  fix(tsdown): add repository metadata to package.json.
