@@ -1,6 +1,6 @@
 {
     "name": "@tala-tools/wt",
-    "version": "0.1.0",
+    "version": "0.0.1",
     "description": "Git worktree resource synchronization — symlink, copy, or skip local files when creating worktrees",
     "private": false,
     "type": "module",
