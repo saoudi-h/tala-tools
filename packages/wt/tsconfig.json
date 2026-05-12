@@ -1,0 +1,9 @@
+{
+    "extends": "@tala-tools/tsconfig/base.json",
+    "compilerOptions": {
+        "target": "es2020",
+        "types": ["node"]
+    },
+    "include": ["./src/**/*.ts", "./*.ts"],
+    "exclude": ["dist", "build", "node_modules", ".vscode", ".turbo"]
+}

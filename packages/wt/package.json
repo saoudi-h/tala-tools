@@ -1,0 +1,77 @@
+{
+    "name": "@tala-tools/wt",
+    "version": "0.1.0",
+    "description": "Git worktree resource synchronization — symlink, copy, or skip local files when creating worktrees",
+    "private": false,
+    "type": "module",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">=20.19.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hakim/tala-tools.git",
+        "directory": "packages/wt"
+    },
+    "keywords": [
+        "git",
+        "worktree",
+        "worktrees",
+        "sync",
+        "symlink",
+        "monorepo",
+        "parallel",
+        "ai-agents",
+        "development"
+    ],
+    "author": {
+        "name": "Saoudi Hakim",
+        "url": "https://hakimsaoudi.dev",
+        "email": "saoudihakim@gmail.com"
+    },
+    "bin": {
+        "wt": "./dist/cli.mjs"
+    },
+    "types": "./dist/index.d.mts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.mts",
+            "default": "./dist/index.mjs"
+        },
+        "./cli": "./dist/cli.mjs",
+        "./package.json": "./package.json"
+    },
+    "scripts": {
+        "build": "tsdown",
+        "dev": "tsdown --watch",
+        "clean": "rm -rf *.tsbuildinfo node_modules .turbo dist",
+        "lint": "eslint . --max-warnings 0",
+        "lint:fix": "eslint . --fix",
+        "format": "prettier \"**/*\" --ignore-unknown --list-different",
+        "format:fix": "prettier \"**/*\" --ignore-unknown --list-different --write",
+        "typecheck": "tsc --noEmit",
+        "pre-commit": "lint-staged",
+        "test": "vitest run",
+        "test:watch": "vitest"
+    },
+    "dependencies": {
+        "commander": "^14.0.3",
+        "picocolors": "^1.1.1",
+        "zod": "^3.25.17"
+    },
+    "devDependencies": {
+        "@tala-tools/eslint": "workspace:*",
+        "@tala-tools/prettier": "workspace:*",
+        "@tala-tools/tsconfig": "workspace:*",
+        "@types/node": "^25.6.0",
+        "eslint": "^10.2.0",
+        "vitest": "^3.2.1"
+    }
+}
