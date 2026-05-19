@@ -1,5 +1,11 @@
 # @tala-tools/eslint
 
+## 0.1.2
+
+### Patch Changes
+
+- ced5b06: fix ESM/CJS interop for @eslint/js and eslint-plugin-regexp imports
+
 ## 0.1.1
 
 ### Patch Changes
