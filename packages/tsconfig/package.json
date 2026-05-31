@@ -23,7 +23,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hakim/tala-tools.git",
+        "url": "git+https://github.com/saoudi-h/tala-tools.git",
         "directory": "packages/tsconfig"
     },
     "keywords": [
