@@ -62,16 +62,16 @@
         "test:watch": "vitest"
     },
     "dependencies": {
-        "commander": "^14.0.3",
+        "commander": "^15.0.0",
         "picocolors": "^1.1.1",
-        "zod": "^3.25.17"
+        "zod": "^4.4.3"
     },
     "devDependencies": {
         "@tala-tools/eslint": "workspace:*",
         "@tala-tools/prettier": "workspace:*",
         "@tala-tools/tsconfig": "workspace:*",
-        "@types/node": "^25.6.0",
-        "eslint": "^10.2.0",
-        "vitest": "^3.2.1"
+        "@types/node": "^25.9.1",
+        "eslint": "^10.4.1",
+        "vitest": "^4.1.7"
     }
 }
