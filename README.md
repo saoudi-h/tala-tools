@@ -30,17 +30,17 @@ pnpm build
 Versioning is managed by [Changesets](https://github.com/changesets/changesets).
 
 1. Create a changeset:
-   ```bash
-   pnpm changeset
-   ```
+    ```bash
+    pnpm changeset
+    ```
 2. Version the packages:
-   ```bash
-   pnpm changeset version
-   ```
+    ```bash
+    pnpm changeset version
+    ```
 3. Publish to NPM:
-   ```bash
-   pnpm changeset publish
-   ```
+    ```bash
+    pnpm changeset publish
+    ```
 
 ## License
 

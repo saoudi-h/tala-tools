@@ -14,10 +14,10 @@ In your `tsconfig.json`:
 
 ```json
 {
-  "extends": "@tala-tools/tsconfig/base.json",
-  "compilerOptions": {
-    "baseUrl": "."
-  }
+    "extends": "@tala-tools/tsconfig/base.json",
+    "compilerOptions": {
+        "baseUrl": "."
+    }
 }
 ```
 

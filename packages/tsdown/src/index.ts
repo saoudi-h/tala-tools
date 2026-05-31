@@ -1,6 +1,6 @@
+import type { UserConfig, UserConfigFn } from 'tsdown/config'
 import { defineConfig as tsdownDefine } from 'tsdown/config'
 import { base } from './configs/base.js'
-import type { UserConfig, UserConfigFn } from 'tsdown/config'
 
 export type { UserConfig, UserConfigFn } from 'tsdown/config'
 
@@ -14,7 +14,10 @@ export type TalaUserConfig = Arrayable<UserConfig> | UserConfigFn | Promise<Arra
 /**
  * Deep merge utility for config objects
  */
-function deepMerge(base: Record<string, unknown>, override: Record<string, unknown>): Record<string, unknown> {
+function deepMerge(
+    base: Record<string, unknown>,
+    override: Record<string, unknown>
+): Record<string, unknown> {
     const result = { ...base }
 
     for (const key in override) {
@@ -48,7 +51,9 @@ function deepMerge(base: Record<string, unknown>, override: Record<string, unkno
  */
 export const defineConfig = (options: TalaUserConfig): UserConfigFn => {
     return tsdownDefine(async (inlineConfig, context) => {
-        const baseConfigRaw = await (typeof base === 'function' ? base(inlineConfig, context) : base)
+        const baseConfigRaw = await (typeof base === 'function'
+            ? base(inlineConfig, context)
+            : base)
         const baseConfig = Array.isArray(baseConfigRaw) ? baseConfigRaw[0] : baseConfigRaw
 
         const userConfigRaw = await (typeof options === 'function'
@@ -56,7 +61,10 @@ export const defineConfig = (options: TalaUserConfig): UserConfigFn => {
             : options)
         const userConfig = Array.isArray(userConfigRaw) ? userConfigRaw[0] : userConfigRaw
 
-        return deepMerge(baseConfig as Record<string, unknown>, userConfig as Record<string, unknown>) as UserConfig
+        return deepMerge(
+            baseConfig as Record<string, unknown>,
+            userConfig as Record<string, unknown>
+        ) as UserConfig
     })
 }
 

@@ -22,7 +22,7 @@ Or in your `package.json`:
 
 ```json
 {
-  "prettier": "@tala-tools/prettier"
+    "prettier": "@tala-tools/prettier"
 }
 ```
 
