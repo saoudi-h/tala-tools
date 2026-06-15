@@ -1,5 +1,11 @@
 # @tala-tools/eslint
 
+## 0.1.4
+
+### Patch Changes
+
+- 16bdb82: up deps
+
 ## 0.1.3
 
 ### Patch Changes
