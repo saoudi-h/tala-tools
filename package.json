@@ -1,39 +1,41 @@
 {
-  "name": "tala-tools",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "typecheck": "turbo run typecheck",
-    "prepare": "husky",
-    "pre-commit": "turbo pre-commit --concurrency=1",
-    "changeset:version": "changeset version",
-    "release": "changeset publish"
-  },
-  "devDependencies": {
-    "@changesets/cli": "^2.31.0",
-    "@commitlint/cli": "^21.2.1",
-    "@commitlint/config-conventional": "^21.2.0",
-    "@commitlint/types": "^21.2.0",
-    "@tala-tools/eslint": "workspace:*",
-    "@tala-tools/prettier": "workspace:*",
-    "@tala-tools/tsconfig": "workspace:*",
-    "husky": "^9.1.7",
-    "lint-staged": "^17.0.8",
-    "prettier": "^3.9.5",
-    "prettier-plugin-organize-imports": "^4.3.0",
-    "prettier-plugin-tailwindcss": "^0.8.0",
-    "publint": "0.3.21",
-    "tsdown": "0.22.7",
-    "turbo": "^2.10.5",
-    "typescript": "7.0.2",
-    "unplugin-unused": "0.5.7"
-  },
-  "packageManager": "pnpm@11.13.0",
-  "engines": {
-    "node": ">=20.19.0"
-  }
+    "name": "tala-tools",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "typecheck": "turbo run typecheck",
+        "prepare": "husky",
+        "pre-commit": "turbo pre-commit --concurrency=1",
+        "changeset:version": "changeset version",
+        "release": "changeset publish",
+        "autonomos": "autonomos"
+    },
+    "devDependencies": {
+        "@changesets/cli": "^2.31.0",
+        "@commitlint/cli": "^21.2.1",
+        "@commitlint/config-conventional": "^21.2.0",
+        "@commitlint/types": "^21.2.0",
+        "@tala-tools/eslint": "workspace:*",
+        "@tala-tools/prettier": "workspace:*",
+        "@tala-tools/tsconfig": "workspace:*",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.0.8",
+        "prettier": "^3.9.5",
+        "prettier-plugin-organize-imports": "^4.3.0",
+        "prettier-plugin-tailwindcss": "^0.8.0",
+        "publint": "0.3.21",
+        "tsdown": "0.22.7",
+        "turbo": "^2.10.5",
+        "typescript": "7.0.2",
+        "unplugin-unused": "0.5.7",
+        "@autonomos/cli": "^0.3.4"
+    },
+    "packageManager": "pnpm@11.13.0",
+    "engines": {
+        "node": ">=20.19.0"
+    }
 }

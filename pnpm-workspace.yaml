@@ -3,3 +3,6 @@ packages:
   - "packages/*"
 allowBuilds:
   esbuild: true
+minimumReleaseAgeExclude:
+  - '@autonomos/cli@0.3.4'
+  - '@autonomos/core@0.3.2'
