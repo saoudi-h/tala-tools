@@ -7,7 +7,7 @@
 
 ## 🚀 Active Sprint
 
-- [ ] **[INIT-01]** Review project context and structure `Priority: 🔵` `Complexity: S`
+- [x] **[INIT-01]** Review project context and structure `Priority: 🔵` `Complexity: S`
 
 ## 🔮 Backlog
 
