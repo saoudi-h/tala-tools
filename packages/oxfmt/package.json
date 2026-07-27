@@ -1,0 +1,49 @@
+{
+    "name": "@tala-tools/oxfmt",
+    "version": "0.0.1",
+    "private": false,
+    "description": "Shared Oxfmt configuration for Tala projects",
+    "keywords": [
+        "config",
+        "formatter",
+        "oxfmt",
+        "tala"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Saoudi Hakim",
+        "email": "saoudihakim@gmail.com",
+        "url": "https://hakimsaoudi.dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saoudi-h/tala-tools.git",
+        "directory": "packages/oxfmt"
+    },
+    "files": [
+        "index.js",
+        "index.d.ts"
+    ],
+    "type": "module",
+    "main": "index.js",
+    "types": "./index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./index.d.ts",
+            "default": "./index.js"
+        }
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "lint": "oxfmt --check .",
+        "format": "oxfmt"
+    },
+    "peerDependencies": {
+        "oxfmt": "^0.60.0"
+    },
+    "engines": {
+        "node": ">=20.19.0"
+    }
+}

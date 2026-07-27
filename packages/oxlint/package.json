@@ -1,0 +1,63 @@
+{
+    "name": "@tala-tools/oxlint",
+    "version": "0.0.1",
+    "private": false,
+    "description": "Shared native-first Oxlint configurations for Tala projects",
+    "keywords": [
+        "config",
+        "lint",
+        "oxlint",
+        "tala"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Saoudi Hakim",
+        "email": "saoudihakim@gmail.com",
+        "url": "https://hakimsaoudi.dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/saoudi-h/tala-tools.git",
+        "directory": "packages/oxlint"
+    },
+    "files": [
+        "index.js",
+        "index.d.ts"
+    ],
+    "type": "module",
+    "main": "index.js",
+    "types": "./index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./index.d.ts",
+            "default": "./index.js"
+        }
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "lint": "oxlint",
+        "lint:fix": "oxlint --fix"
+    },
+    "peerDependencies": {
+        "eslint-plugin-better-tailwindcss": "^4.7.0",
+        "oxlint": "^1.75.0",
+        "oxlint-tsgolint": "^7.0.2001",
+        "tailwindcss": "^4.2.2"
+    },
+    "peerDependenciesMeta": {
+        "eslint-plugin-better-tailwindcss": {
+            "optional": true
+        },
+        "oxlint-tsgolint": {
+            "optional": true
+        },
+        "tailwindcss": {
+            "optional": true
+        }
+    },
+    "engines": {
+        "node": ">=20.19.0"
+    }
+}

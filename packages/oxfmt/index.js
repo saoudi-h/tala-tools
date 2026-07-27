@@ -1,0 +1,16 @@
+/** @type {import('oxfmt').Oxfmtrc} */
+const config = {
+    tabWidth: 4,
+    useTabs: false,
+    singleQuote: true,
+    semi: false,
+    bracketSpacing: true,
+    arrowParens: 'avoid',
+    trailingComma: 'es5',
+    bracketSameLine: true,
+    printWidth: 100,
+    sortImports: true,
+    sortTailwindcss: false,
+}
+
+export default config

@@ -24,7 +24,7 @@ worktrees.
 ## Stack
 
 - TypeScript, ESM-only, pnpm 11, Turborepo, and tsdown.
-- ESLint flat configs and Prettier 3 for static analysis and formatting.
+- ESLint flat configs and Prettier 3, plus Oxlint and Oxfmt for the Oxc migration.
 - Vitest tests in `packages/wt`.
 - Runtime support: Bun and Node.js `>=20.19.0`.
 
@@ -32,6 +32,8 @@ worktrees.
 
 - `packages/eslint/`: shared ESLint flat configurations.
 - `packages/prettier/`: shared Prettier configuration.
+- `packages/oxfmt/`: shared Oxfmt configuration.
+- `packages/oxlint/`: shared Oxlint configurations.
 - `packages/tsconfig/`: shared TypeScript JSON configurations.
 - `packages/tsdown/`: shared tsdown configuration helpers.
 - `packages/wt/`: Git worktree synchronization library and CLI.
@@ -43,3 +45,39 @@ worktrees.
 - In `@tala-tools/tsdown`, pin `tsdown`, `publint`, and `unplugin-unused` to
   exact versions.
 - Preserve Bun and Node.js `>=20.19.0` compatibility across packages.
+- For Oxc adoption, prefer native Oxlint rules and Oxfmt features; use ESLint
+  compatibility plugins only for material coverage gaps.
+- `@tala-tools/oxlint` and `@tala-tools/oxfmt` coexist with the existing ESLint
+  and Prettier packages during consumer migration; do not replace the legacy
+  packages without explicit approval.
+- Oxfmt's native import sorting is not a drop-in replacement for
+  `prettier-plugin-organize-imports`, but a one-time formatting diff is
+  acceptable when the resulting order is stable and maintained by Oxfmt.
+- A future shared Oxlint configuration must remain native-only: do not make
+  arbitrary ESLint plugins transitive compatibility dependencies. Prefer Oxc
+  native rules, but retain high-value Oxlint-compatible plugins when they add
+  context-aware validation or formatting that Oxfmt cannot provide.
+- `eslint-plugin-better-tailwindcss` is a required candidate for the Oxlint
+  preset: its class validation catches invalid Tailwind classes and must be
+  evaluated as a first-class integration rather than discarded as a legacy
+  compatibility plugin.
+- Consumers that enable the Tailwind Oxlint preset must install both
+  `tailwindcss` and `eslint-plugin-better-tailwindcss` directly; pnpm does not
+  expose transitive dependencies to the Oxlint JS plugin resolver.
+- The commerce pilot confirms that `better-tailwindcss` correctness rules work
+  under Oxlint after carrying project ignore patterns. Its stylistic ordering
+  and wrapping rules conflict with Oxfmt sorting. `better-tailwindcss` is the
+  Tailwind style authority; Oxfmt Tailwind sorting stays disabled by default.
+- During Oxc migration, native Oxlint correctness rules and unused-variable
+  findings start as warnings. Raise selected rules to errors only after
+  comparison against the existing ESLint baseline.
+- The root Oxc presets load successfully with TypeScript 7. Existing
+  `typescript-eslint` and React ESLint plugin peer ranges remain incompatible
+  with the root TypeScript 7 and ESLint 10 versions; this is expected until
+  those legacy packages are removed from a consuming project.
+- The commerce storefront already carries `oxlint` and `oxlint-tsgolint`, but
+  had no shared Tala Oxc configuration. Its clean ESLint run is the baseline
+  for promoting new Oxlint diagnostics beyond warnings.
+- Root Oxc scripts validate only the new presets and their configs until the
+  repository itself has completed its one-time Oxfmt migration; existing files
+  currently have formatting differences and must not be rewritten incidentally.
