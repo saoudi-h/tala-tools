@@ -81,3 +81,5 @@ worktrees.
 - Root Oxc scripts validate only the new presets and their configs until the
   repository itself has completed its one-time Oxfmt migration; existing files
   currently have formatting differences and must not be rewritten incidentally.
+- Unpublished packages use `0.0.0` in their manifests; their initial public
+  `0.0.1` release is produced by a patch changeset.
