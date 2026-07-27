@@ -19,6 +19,14 @@
         {
             "name": "tsdown",
             "path": "packages/tsdown"
+        },
+        {
+            "name": "oxlint",
+            "path": "packages/oxlint"
+        },
+        {
+            "name": "oxfmt",
+            "path": "packages/oxfmt"
         }
     ],
 }
