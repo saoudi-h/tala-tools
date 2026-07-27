@@ -1,6 +1,6 @@
 {
     "name": "@tala-tools/oxfmt",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "private": false,
     "description": "Shared Oxfmt configuration for Tala projects",
     "keywords": [
