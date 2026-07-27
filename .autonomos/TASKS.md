@@ -7,7 +7,7 @@
 
 ## 🚀 Active Sprint
 
-- [/] **[OXC-06]** Queue initial Oxc package release through Changesets `Priority: 🟠` `Complexity: S`
+- [x] **[OXC-06]** Queue initial Oxc package release through Changesets `Priority: 🟠` `Complexity: S`
 - [x] **[OXC-05]** Prepare Oxc packages for publication readiness `Priority: 🟠` `Complexity: L`
 - [x] **[OXC-04]** Stabilize Oxc presets and rerun commerce pilot `Priority: 🟠` `Complexity: M`
 - [x] **[OXC-03]** Pilot local Oxc packages in commerce `Priority: 🟠` `Complexity: L`
