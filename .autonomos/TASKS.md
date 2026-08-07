@@ -7,6 +7,7 @@
 
 ## 🚀 Active Sprint
 
+- [x] **[OPS-01]** Fix broken pnpm pin and unblock Changesets release CI `Priority: 🔴` `Complexity: S`
 - [x] **[OXC-06]** Queue initial Oxc package release through Changesets `Priority: 🟠` `Complexity: S`
 - [x] **[OXC-05]** Prepare Oxc packages for publication readiness `Priority: 🟠` `Complexity: L`
 - [x] **[OXC-04]** Stabilize Oxc presets and rerun commerce pilot `Priority: 🟠` `Complexity: M`
