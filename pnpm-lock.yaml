@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@autonomos/cli':
-        specifier: ^0.3.4
-        version: 0.3.4(@types/node@26.1.1)
+        specifier: ^0.4.1
+        version: 0.4.1(@types/node@26.1.1)
       '@changesets/cli':
         specifier: ^2.31.0
         version: 2.31.0(@types/node@26.1.1)
@@ -247,12 +247,12 @@ packages:
   '@adobe/css-tools@4.5.0':
     resolution: {integrity: sha512-6OzddxPio9UiWTCemp4N8cYLV2ZN1ncRnV1cVGtve7dhPOtRkleRyx32GQCYSwDYgaHU3USMm84tNsvKzRCa1Q==}
 
-  '@autonomos/cli@0.3.4':
-    resolution: {integrity: sha512-dE0Qzc4OqFJldBe2SQbIsD1uRVaw3QDb6SdP3AEMMsLIoSp1S4BsfcyB+j66a/go23HCqs0lyu2Y42JuhUoNVA==}
+  '@autonomos/cli@0.4.1':
+    resolution: {integrity: sha512-qEMGJhHqegh6T3yN8IzIEBnxbz0nG4sJacVoYxfy+SSeVQNdD1k5QsU1ZRfzCwBBxiMJl+soDhb7/i/ONPhYrA==}
     hasBin: true
 
-  '@autonomos/core@0.3.2':
-    resolution: {integrity: sha512-GR0otzMjyk+IjXcKz/OJb8iT4eRSvqDtKDmJuyDxjRFwSBy6VQFAg6//4E3EPjx/0imcoPDaS5P2NMuUDG95xg==}
+  '@autonomos/core@0.4.0':
+    resolution: {integrity: sha512-mA+q+8t8uiAsVnM+sTtQx67LmyrNg4YmYLsgPSFpe3hdWkYhS+7VTM2rIYuK8UuXYUp9rD+doCdPZz53+4PvqA==}
 
   '@babel/code-frame@7.29.7':
     resolution: {integrity: sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==}
@@ -4730,16 +4730,16 @@ snapshots:
 
   '@adobe/css-tools@4.5.0': {}
 
-  '@autonomos/cli@0.3.4(@types/node@26.1.1)':
+  '@autonomos/cli@0.4.1(@types/node@26.1.1)':
     dependencies:
-      '@autonomos/core': 0.3.2
+      '@autonomos/core': 0.4.0
       '@inquirer/prompts': 7.10.1(@types/node@26.1.1)
       commander: 14.0.3
       picocolors: 1.1.1
     transitivePeerDependencies:
       - '@types/node'
 
-  '@autonomos/core@0.3.2':
+  '@autonomos/core@0.4.0':
     dependencies:
       js-yaml: 4.1.0
       zod: 3.24.1
