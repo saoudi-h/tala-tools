@@ -13,8 +13,8 @@
         "directory": "packages/tsdown"
     },
     "dependencies": {
-        "publint": "0.3.21",
-        "unplugin-unused": "0.5.7"
+        "publint": "0.3.23",
+        "unplugin-unused": "0.6.0"
     },
     "peerDependencies": {
         "tsdown": "0.21.7"
@@ -33,8 +33,8 @@
         "@tala-tools/eslint": "workspace:*",
         "@tala-tools/prettier": "workspace:*",
         "@tala-tools/tsconfig": "workspace:*",
-        "@types/node": "^26.1.1",
-        "eslint": "^10.7.0"
+        "@types/node": "^26.1.2",
+        "eslint": "^10.8.0"
     },
     "types": "./dist/index.d.mts",
     "files": [
