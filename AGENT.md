@@ -71,10 +71,11 @@ worktrees.
 - During Oxc migration, native Oxlint correctness rules and unused-variable
   findings start as warnings. Raise selected rules to errors only after
   comparison against the existing ESLint baseline.
-- The root Oxc presets load successfully with TypeScript 7. Existing
-  `typescript-eslint` and React ESLint plugin peer ranges remain incompatible
-  with the root TypeScript 7 and ESLint 10 versions; this is expected until
-  those legacy packages are removed from a consuming project.
+- The root toolchain and Oxc packages use TypeScript 7. `@tala-tools/eslint`
+  keeps an exact TypeScript 6 devDependency for its legacy `typescript-eslint`
+  toolchain, whose peer range still excludes TypeScript 7. This intentional
+  dual-version setup must remain isolated to that package; consumers migrating
+  to `@tala-tools/oxlint` do not depend on the legacy TypeScript 6 path.
 - The commerce storefront already carries `oxlint` and `oxlint-tsgolint`, but
   had no shared Tala Oxc configuration. Its clean ESLint run is the baseline
   for promoting new Oxlint diagnostics beyond warnings.

@@ -67,28 +67,30 @@ export const wtConfigSchema = z.object({
 
     /** Hook called after worktree creation and initial sync. */
     afterCreate: z
-        .function()
-        .args(
-            z.object({
-                name: z.string(),
-                worktreePath: z.string(),
-                mainPath: z.string(),
-            })
-        )
-        .returns(z.union([z.void(), z.promise(z.void())]))
+        .function({
+            input: [
+                z.object({
+                    name: z.string(),
+                    worktreePath: z.string(),
+                    mainPath: z.string(),
+                }),
+            ],
+            output: z.union([z.void(), z.promise(z.void())]),
+        })
         .optional(),
 
     /** Hook called after sync (including the sync that follows create). */
     afterSync: z
-        .function()
-        .args(
-            z.object({
-                name: z.string(),
-                worktreePath: z.string(),
-                mainPath: z.string(),
-            })
-        )
-        .returns(z.union([z.void(), z.promise(z.void())]))
+        .function({
+            input: [
+                z.object({
+                    name: z.string(),
+                    worktreePath: z.string(),
+                    mainPath: z.string(),
+                }),
+            ],
+            output: z.union([z.void(), z.promise(z.void())]),
+        })
         .optional(),
 })
 

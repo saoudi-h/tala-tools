@@ -7,6 +7,7 @@
 
 ## 🚀 Active Sprint
 
+- [x] **[DEPS-01]** Refresh dependencies and formalize dual TypeScript coexistence `Priority: 🔴` `Complexity: M`
 - [x] **[OPS-01]** Fix broken pnpm pin and unblock Changesets release CI `Priority: 🔴` `Complexity: S`
 - [x] **[OXC-06]** Queue initial Oxc package release through Changesets `Priority: 🟠` `Complexity: S`
 - [x] **[OXC-05]** Prepare Oxc packages for publication readiness `Priority: 🟠` `Complexity: L`
