@@ -1,5 +1,11 @@
 # @tala-tools/tsdown
 
+## 0.1.7
+
+### Patch Changes
+
+- 7fdf625: Refresh dependencies, isolate the TypeScript 6 toolchain for legacy ESLint support, and keep wt compatible with Zod 4.
+
 ## 0.1.6
 
 ### Patch Changes
