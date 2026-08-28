@@ -3,7 +3,7 @@
 ## [ISSUE-001] Bun TypeScript preset does not resolve declared consumer types cleanly
 
 - Type: problem
-- Status: open
+- Status: closed
 - Evidence: `packages/tsconfig/bun.json` requests the `bun-types` type library.
   Herald declares `@types/bun@1.4.0`, as used by its Bun packages, and extends this
   preset. A clean GitHub Actions installation fails the API typecheck with `TS2688:
@@ -21,4 +21,4 @@ Cannot find type definition file for 'bun-types'`. A stale local
   and runtime assumptions documented. Existing Node-oriented consumers remain
   unaffected, and representative clean consumer checks prevent the presets from
   drifting again.
-- Tasks: none
+- Tasks: [TSC-01]

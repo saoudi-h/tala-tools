@@ -1,6 +1,6 @@
 {
     "name": "@tala-tools/tsconfig",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "private": false,
     "type": "module",
     "description": "Shared TypeScript configurations for Tala projects",
@@ -15,7 +15,9 @@
         "./nextjs.json": "./nextjs.json",
         "./react-library.json": "./react-library.json",
         "./next.json": "./next.json",
-        "./bun.json": "./bun.json",
+        "./bun-base.json": "./bun-base.json",
+        "./bun-next.json": "./bun-next.json",
+        "./bun-react-library.json": "./bun-react-library.json",
         "./remotion.json": "./remotion.json"
     },
     "publishConfig": {
