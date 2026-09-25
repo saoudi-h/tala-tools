@@ -1,5 +1,11 @@
 # @tala-tools/wt
 
+## 0.1.3
+
+### Patch Changes
+
+- 795c734: up deps
+
 ## 0.1.2
 
 ### Patch Changes
