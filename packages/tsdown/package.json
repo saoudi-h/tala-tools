@@ -35,7 +35,7 @@
         "@tala-tools/tsconfig": "workspace:*",
         "@types/node": "^26.6.2",
         "eslint": "^10.11.0",
-        "typescript": "7.0.2"
+        "typescript": "6.0.3"
     },
     "types": "./dist/index.d.mts",
     "files": [

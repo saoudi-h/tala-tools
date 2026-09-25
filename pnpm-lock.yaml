@@ -351,7 +351,7 @@ importers:
         version: 0.3.24
       tsdown:
         specifier: 0.21.7
-        version: 0.21.7(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(oxc-resolver@11.24.2)(publint@0.3.24)(synckit@0.11.13)(typescript@7.0.2)(unplugin-unused@0.6.0(esbuild@0.28.1)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(vite@8.2.0(@types/node@26.6.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0)))
+        version: 0.21.7(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(oxc-resolver@11.24.2)(publint@0.3.24)(synckit@0.11.13)(typescript@6.0.3)(unplugin-unused@0.6.0(esbuild@0.28.1)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(vite@8.2.0(@types/node@26.6.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0)))
       unplugin-unused:
         specifier: 0.6.0
         version: 0.6.0(esbuild@0.28.1)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(vite@8.2.0(@types/node@26.6.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))
@@ -372,8 +372,8 @@ importers:
         specifier: ^10.11.0
         version: 10.11.0(jiti@2.7.0)(supports-color@7.2.0)
       typescript:
-        specifier: 7.0.2
-        version: 7.0.2
+        specifier: 6.0.3
+        version: 6.0.3
 
   packages/wt:
     dependencies:
@@ -7892,7 +7892,7 @@ snapshots:
 
   reusify@1.1.0: {}
 
-  rolldown-plugin-dts@0.23.2(oxc-resolver@11.24.2)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(typescript@7.0.2):
+  rolldown-plugin-dts@0.23.2(oxc-resolver@11.24.2)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(typescript@6.0.3):
     dependencies:
       '@babel/generator': 8.0.0-rc.3
       '@babel/helper-validator-identifier': 8.0.0-rc.3
@@ -7906,7 +7906,7 @@ snapshots:
       picomatch: 4.0.5
       rolldown: 1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
     optionalDependencies:
-      typescript: 7.0.2
+      typescript: 6.0.3
     transitivePeerDependencies:
       - oxc-resolver
 
@@ -8249,7 +8249,7 @@ snapshots:
       minimist: 1.2.8
       strip-bom: 3.0.0
 
-  tsdown@0.21.7(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(oxc-resolver@11.24.2)(publint@0.3.24)(synckit@0.11.13)(typescript@7.0.2)(unplugin-unused@0.6.0(esbuild@0.28.1)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(vite@8.2.0(@types/node@26.6.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))):
+  tsdown@0.21.7(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)(oxc-resolver@11.24.2)(publint@0.3.24)(synckit@0.11.13)(typescript@6.0.3)(unplugin-unused@0.6.0(esbuild@0.28.1)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(vite@8.2.0(@types/node@26.6.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))):
     dependencies:
       ansis: 4.3.1
       cac: 7.0.0
@@ -8260,7 +8260,7 @@ snapshots:
       obug: 2.1.4
       picomatch: 4.0.5
       rolldown: 1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2)
-      rolldown-plugin-dts: 0.23.2(oxc-resolver@11.24.2)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(typescript@7.0.2)
+      rolldown-plugin-dts: 0.23.2(oxc-resolver@11.24.2)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(typescript@6.0.3)
       semver: 7.8.5
       tinyexec: 1.3.0
       tinyglobby: 0.2.17
@@ -8269,7 +8269,7 @@ snapshots:
       unrun: 0.2.39(synckit@0.11.13)
     optionalDependencies:
       publint: 0.3.24
-      typescript: 7.0.2
+      typescript: 6.0.3
       unplugin-unused: 0.6.0(esbuild@0.28.1)(rolldown@1.0.0-rc.12(@emnapi/core@1.11.2)(@emnapi/runtime@1.11.2))(vite@8.2.0(@types/node@26.6.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))
     transitivePeerDependencies:
       - '@emnapi/core'
