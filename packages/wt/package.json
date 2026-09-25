@@ -64,14 +64,14 @@
     "dependencies": {
         "commander": "^15.0.0",
         "picocolors": "^1.1.1",
-        "zod": "^4.4.3"
+        "zod": "^4.6.5"
     },
     "devDependencies": {
         "@tala-tools/eslint": "workspace:*",
         "@tala-tools/prettier": "workspace:*",
         "@tala-tools/tsconfig": "workspace:*",
-        "@types/node": "^26.2.0",
-        "eslint": "^10.9.0",
-        "vitest": "^4.1.11"
+        "@types/node": "^26.6.2",
+        "eslint": "^10.11.0",
+        "vitest": "^5.0.1"
     }
 }

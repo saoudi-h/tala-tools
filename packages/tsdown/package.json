@@ -33,9 +33,9 @@
         "@tala-tools/eslint": "workspace:*",
         "@tala-tools/prettier": "workspace:*",
         "@tala-tools/tsconfig": "workspace:*",
-        "@types/node": "^26.2.0",
-        "eslint": "^10.9.0",
-        "typescript": "6.0.3"
+        "@types/node": "^26.6.2",
+        "eslint": "^10.11.0",
+        "typescript": "7.0.2"
     },
     "types": "./dist/index.d.mts",
     "files": [
