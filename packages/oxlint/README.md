@@ -19,8 +19,8 @@ pnpm add -D eslint-plugin-better-tailwindcss tailwindcss
 Create `oxlint.config.ts` in the consuming project:
 
 ```typescript
-import { defineConfig } from 'oxlint'
 import { base, next, tailwind } from '@tala-tools/oxlint'
+import { defineConfig } from 'oxlint'
 
 export default defineConfig({
     extends: [base, next, tailwind],

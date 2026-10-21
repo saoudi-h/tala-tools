@@ -41,7 +41,7 @@
         "format": "oxfmt"
     },
     "peerDependencies": {
-        "oxfmt": "^0.60.0"
+        "oxfmt": "^0.74.0"
     },
     "engines": {
         "node": ">=20.19.0"
