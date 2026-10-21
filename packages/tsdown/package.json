@@ -7,6 +7,9 @@
     "publishConfig": {
         "access": "public"
     },
+    "engines": {
+        "node": ">=20.19.0"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/saoudi-h/tala-tools.git",
