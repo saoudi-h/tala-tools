@@ -3,6 +3,11 @@ packages:
   - "packages/*"
 allowBuilds:
   esbuild: true
+peerDependencyRules:
+  allowedVersions:
+    # eslint-plugin-jsx-a11y still declares ESLint 9 as its maximum peer, but it
+    # runs correctly on ESLint 10: it uses no API removed in ESLint 10.
+    'eslint-plugin-jsx-a11y>eslint': '10'
 minimumReleaseAgeExclude:
   - '@autonomos/cli@0.3.4'
   - '@autonomos/core@0.3.2'

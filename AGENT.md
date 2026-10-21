@@ -42,6 +42,18 @@ worktrees.
 ## Constraints
 
 - Keep every package ESM-only.
+- The repository toolchain requires Node `>=22.18.0` and Bun, matching the
+  root `engines` field and the tsdown `0.23` build. The published packages keep
+  their Node `>=20.19.0` runtime support, so `@tala-tools/tsdown` stays on
+  tsdown `0.21.7` and `unplugin-unused` `0.5.7`.
+- `eslint-plugin-react` is not part of `@tala-tools/eslint`: it still declares
+  ESLint 9 as its maximum peer and crashes on ESLint 10 when a rule loads
+  (`context.getSourceCode` was removed). Consumers needing React rules use
+  `@eslint-react/eslint-plugin` or the native Oxlint `react` plugin.
+- `eslint-plugin-jsx-a11y` declares ESLint 9 as its maximum peer but uses no
+  API removed in ESLint 10. `pnpm-workspace.yaml` allows that version
+  explicitly; do not remove the rule without re-running the compatibility
+  check.
 - In `@tala-tools/tsdown`, pin `tsdown`, `publint`, and `unplugin-unused` to
   exact versions.
 - Preserve Bun and Node.js `>=20.19.0` compatibility across packages.

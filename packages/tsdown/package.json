@@ -14,7 +14,7 @@
     },
     "dependencies": {
         "publint": "0.3.25",
-        "unplugin-unused": "0.6.0"
+        "unplugin-unused": "0.5.7"
     },
     "peerDependencies": {
         "tsdown": "0.21.7"

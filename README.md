@@ -15,6 +15,12 @@ A collection of shared configurations and tools for Tala projects.
 
 This monorepo uses [PNPM](https://pnpm.io/) and [Turbo](https://turbo.build/).
 
+### Requirements
+
+- Node.js `>=22.18.0`
+- Bun
+- PNPM `12` (the version is pinned in `packageManager`)
+
 ### Setup
 
 ```bash
