@@ -1,6 +1,6 @@
 {
     "name": "@tala-tools/prettier",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "private": false,
     "type": "module",
     "description": "Shared Prettier configuration for Tala projects",

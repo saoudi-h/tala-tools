@@ -1,5 +1,11 @@
 # @tala-tools/prettier
 
+## 0.0.5
+
+### Patch Changes
+
+- 1d67cd7: Declare the Node.js runtime range in the remaining published manifests, so every package of the `@tala-tools` scope exposes the same `engines.node` field.
+
 ## 0.0.4
 
 ### Patch Changes
