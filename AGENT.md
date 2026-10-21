@@ -87,3 +87,8 @@ worktrees.
   currently have formatting differences and must not be rewritten incidentally.
 - Unpublished packages use `0.0.0` in their manifests; their initial public
   `0.0.1` release is produced by a patch changeset.
+- Releases publish through npm trusted publishing (OIDC). The `Release` job
+  needs `id-token: write`, and every package in the `@tala-tools` scope needs a
+  GitHub Actions trusted publisher for `saoudi-h/tala-tools` with the
+  `release.yml` workflow and the `npm publish` action allowed. Do not reintroduce
+  long-lived npm tokens.

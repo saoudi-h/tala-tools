@@ -35,14 +35,15 @@ Versioning is managed by [Changesets](https://github.com/changesets/changesets).
     ```bash
     pnpm changeset
     ```
-2. Version the packages:
-    ```bash
-    pnpm changeset version
-    ```
-3. Publish to NPM:
-    ```bash
-    pnpm changeset publish
-    ```
+2. Commit it and push to `main`. The `Release` workflow opens a `Version Packages`
+   pull request with the bumped versions and changelogs.
+3. Merge that pull request. The workflow publishes the unreleased packages to
+   NPM.
+
+Publishing uses [npm trusted publishing](https://docs.npmjs.com/trusted-publishers)
+(OIDC), so no npm token is stored in the repository. Each package in the
+`@tala-tools` scope trusts the `saoudi-h/tala-tools` repository and the
+`release.yml` workflow.
 
 ## License
 
