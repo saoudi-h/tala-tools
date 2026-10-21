@@ -14,7 +14,6 @@
         "./base.json": "./base.json",
         "./nextjs.json": "./nextjs.json",
         "./react-library.json": "./react-library.json",
-        "./next.json": "./next.json",
         "./bun-base.json": "./bun-base.json",
         "./bun-next.json": "./bun-next.json",
         "./bun-react-library.json": "./bun-react-library.json",
