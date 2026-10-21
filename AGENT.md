@@ -50,6 +50,9 @@ worktrees.
 - `@tala-tools/oxlint` and `@tala-tools/oxfmt` coexist with the existing ESLint
   and Prettier packages during consumer migration; do not replace the legacy
   packages without explicit approval.
+- Keep the `oxfmt` peer range in `@tala-tools/oxfmt` aligned with the Oxfmt
+  version validated at the root. A caret range on a `0.x` version pins a single
+  minor, so a stale bound breaks the workspace peer resolution.
 - Oxfmt's native import sorting is not a drop-in replacement for
   `prettier-plugin-organize-imports`, but a one-time formatting diff is
   acceptable when the resulting order is stable and maintained by Oxfmt.
