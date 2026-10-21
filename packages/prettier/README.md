@@ -8,6 +8,13 @@ Shared Prettier configuration for Tala projects.
 pnpm add -D @tala-tools/prettier
 ```
 
+The shared config enables `prettier-plugin-organize-imports`. Install it to keep
+the import sorting, and drop it from the config if you do not want it:
+
+```bash
+pnpm add -D prettier-plugin-organize-imports
+```
+
 ## Usage
 
 In your `prettier.config.js`:

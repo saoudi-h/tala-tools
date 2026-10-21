@@ -15,11 +15,15 @@
         "format": "prettier --write ."
     },
     "peerDependencies": {
-        "prettier": "^3.7.4"
+        "prettier": "^3.7.4",
+        "prettier-plugin-organize-imports": "^4.3.0"
     },
     "peerDependenciesMeta": {
         "prettier": {
             "optional": false
+        },
+        "prettier-plugin-organize-imports": {
+            "optional": true
         }
     },
     "publishConfig": {
