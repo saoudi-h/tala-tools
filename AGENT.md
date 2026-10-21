@@ -92,3 +92,7 @@ worktrees.
   GitHub Actions trusted publisher for `saoudi-h/tala-tools` with the
   `release.yml` workflow and the `npm publish` action allowed. Do not reintroduce
   long-lived npm tokens.
+- Keep `changesets/action` on the major that matches `@changesets/cli`: the v2
+  action targets CLI v3 and reads its NDJSON output events. The v1 action only
+  recognizes the CLI v2 `New tag:` output, so it silently skips the git tags and
+  the GitHub releases.
