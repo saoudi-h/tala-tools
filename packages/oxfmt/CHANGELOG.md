@@ -1,5 +1,11 @@
 # @tala-tools/oxfmt
 
+## 0.0.3
+
+### Patch Changes
+
+- deps: update all dependencies to latest compatible versions
+
 ## 0.0.2
 
 ### Patch Changes

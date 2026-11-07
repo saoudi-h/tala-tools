@@ -1,5 +1,11 @@
 # @tala-tools/tsdown
 
+## 0.1.11
+
+### Patch Changes
+
+- deps: update all dependencies to latest compatible versions
+
 ## 0.1.10
 
 ### Patch Changes

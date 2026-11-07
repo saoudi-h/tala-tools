@@ -1,5 +1,11 @@
 # @tala-tools/wt
 
+## 0.1.4
+
+### Patch Changes
+
+- deps: update all dependencies to latest compatible versions
+
 ## 0.1.3
 
 ### Patch Changes

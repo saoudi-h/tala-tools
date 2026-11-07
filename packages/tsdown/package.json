@@ -1,6 +1,6 @@
 {
     "name": "@tala-tools/tsdown",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "private": false,
     "type": "module",
     "license": "MIT",
@@ -36,8 +36,8 @@
         "@tala-tools/eslint": "workspace:*",
         "@tala-tools/prettier": "workspace:*",
         "@tala-tools/tsconfig": "workspace:*",
-        "@types/node": "^26.6.5",
-        "eslint": "^10.13.0",
+        "@types/node": "^26.6.6",
+        "eslint": "^10.14.0",
         "typescript": "6.0.3"
     },
     "types": "./dist/index.d.mts",

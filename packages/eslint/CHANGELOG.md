@@ -1,5 +1,11 @@
 # @tala-tools/eslint
 
+## 0.2.1
+
+### Patch Changes
+
+- deps: update all dependencies to latest compatible versions
+
 ## 0.2.0
 
 ### Minor Changes

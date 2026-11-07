@@ -1,6 +1,6 @@
 {
     "name": "@tala-tools/oxfmt",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "private": false,
     "description": "Shared Oxfmt configuration for Tala projects",
     "keywords": [
@@ -41,7 +41,7 @@
         "format": "oxfmt"
     },
     "peerDependencies": {
-        "oxfmt": "^0.74.0"
+        "oxfmt": "^0.77.0"
     },
     "engines": {
         "node": ">=20.19.0"
