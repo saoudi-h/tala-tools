@@ -9,8 +9,8 @@ peerDependencyRules:
     # runs correctly on ESLint 10: it uses no API removed in ESLint 10.
     'eslint-plugin-jsx-a11y>eslint': '10'
 minimumReleaseAgeExclude:
-  - '@autonomos/cli@0.3.4'
-  - '@autonomos/core@0.3.2'
+  - '@autonomos/cli@0.3.4 || 0.7.1'
+  - '@autonomos/core@0.3.2 || 0.7.1'
   - '@turbo/darwin-64@2.11.4'
   - '@turbo/darwin-arm64@2.11.4'
   - '@turbo/linux-64@2.11.4'

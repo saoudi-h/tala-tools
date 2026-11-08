@@ -167,8 +167,8 @@ importers:
   .:
     devDependencies:
       '@autonomos/cli':
-        specifier: ^0.7.0
-        version: 0.7.0(@types/node@26.6.6)
+        specifier: ^0.7.1
+        version: 0.7.1(@types/node@26.6.6)
       '@changesets/cli':
         specifier: ^3.0.3
         version: 3.0.3
@@ -408,12 +408,12 @@ importers:
 
 packages:
 
-  '@autonomos/cli@0.7.0':
-    resolution: {integrity: sha512-pxkHFhI0pj4uRh4kNbT2+I6MogaKqvzXT7rErMIz3VA9Ag0IpGstJ3Vv5+aY/85Nh+Igv0EU8uDVRmmZPQUO3Q==}
+  '@autonomos/cli@0.7.1':
+    resolution: {integrity: sha512-iLVM3e84yF2/Whd5UBgV3IAv8+eV1dLsb3NJvEqtVRNtPgnJ6kAQPW7AmGBLyTSxvRremIQN9Wi+ru8Lzo6Y8g==}
     hasBin: true
 
-  '@autonomos/core@0.7.0':
-    resolution: {integrity: sha512-uTCPcN9s97gIay7YNWHpq3ZSR5U+6XrkkIayX7GmRV+Xht0gPv8Pn2O/+IuIH0jL+g+nOutAkbKvSuSp4YC+mg==}
+  '@autonomos/core@0.7.1':
+    resolution: {integrity: sha512-/mwX15gME4RLhxahb+qNlzDkWx9/hKMKz08UzQkgSL8AW0FAbLS56ppjcpnU3eLa+3C/RjJK7xNgehKG3oYSog==}
 
   '@babel/code-frame@7.29.7':
     resolution: {integrity: sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw==}
@@ -3999,16 +3999,16 @@ packages:
 
 snapshots:
 
-  '@autonomos/cli@0.7.0(@types/node@26.6.6)':
+  '@autonomos/cli@0.7.1(@types/node@26.6.6)':
     dependencies:
-      '@autonomos/core': 0.7.0
+      '@autonomos/core': 0.7.1
       '@inquirer/prompts': 7.10.1(@types/node@26.6.6)
       commander: 14.0.3
       picocolors: 1.1.1
     transitivePeerDependencies:
       - '@types/node'
 
-  '@autonomos/core@0.7.0':
+  '@autonomos/core@0.7.1':
     dependencies:
       js-yaml: 4.1.0
       zod: 3.24.1
