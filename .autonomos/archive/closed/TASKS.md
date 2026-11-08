@@ -14,3 +14,7 @@
 - [x] **[OXC-02]** Build and validate shared Oxc configuration packages `Priority: 🟠` `Complexity: L`
 - [x] **[OXC-01]** Evaluate native Oxc tooling and shared package value `Priority: 🟠` `Complexity: L`
 - [x] **[INIT-01]** Review project context and structure `Priority: 🔵` `Complexity: S`
+
+## Closed 2026-11-08
+
+- [x] **[PROTO-01]** Upgrade Autonomos protocol to 0.8.1 and migrate records to format 2 `Priority: 🔴` `Complexity: S` `Completed: 2026-11-08`
