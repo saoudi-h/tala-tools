@@ -51,6 +51,16 @@ Publishing uses [npm trusted publishing](https://docs.npmjs.com/trusted-publishe
 `@tala-tools` scope trusts the `saoudi-h/tala-tools` repository and the
 `release.yml` workflow.
 
+## Other projects
+
+Related open-source projects by [Hakim Saoudi](https://github.com/saoudi-h):
+
+- [Postdot](https://postdot.app/?utm_source=github&utm_medium=readme&utm_campaign=tala-tools): self-hosted social publishing for you and your agents
+- [Solar Icons](https://solar-icons.dev/?utm_source=github&utm_medium=readme&utm_campaign=tala-tools): an icon catalogue in six styles, with packages for major frameworks
+- [RateLock](https://ratelock-docs.vercel.app/?utm_source=github&utm_medium=readme&utm_campaign=tala-tools): rate limiting for Node.js, Bun and other runtimes
+- [tw-screens](https://github.com/saoudi-h/tw-screens): responsive breakpoint hooks inspired by Tailwind CSS
+- [Autonomos](https://github.com/saoudi-h/autonomos): a protocol that gives AI coding agents structured project context
+
 ## License
 
 MIT
